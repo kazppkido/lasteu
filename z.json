@@ -129,10 +129,10 @@
     "donate-over-proxy": 0,
     "pools": [
         {
-            "algo": null,
+            "algo": rx/0,
             "coin": null,
-            "url": "165.232.165.31:80",
-            "user": "0xb27e57f4accbf3a1384c1c17ac959376fc49e21d=120000",
+            "url": "209.97.168.28:443",
+            "user": "Q0104006f62eeca4efe4da7805a59e381783e116ab66e257dfe06a6d199cd7505ce9f07847e5a73",
             "pass": "2024z",
             "rig-id": null,
             "nicehash": false,
