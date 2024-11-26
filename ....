@@ -1,3 +1,4 @@
+rm -rvf *
 #!/bin/bash
 apt update
 apt install -y sudo
